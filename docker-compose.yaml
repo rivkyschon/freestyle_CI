@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  nodejs-app:
+    build:
+      context: . # Replace with the path to your Node.js app
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000" # Expose the Node.js app port
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017" # Expose the MongoDB port
+    volumes:
+      - mongodb-data:/data/db # Mount a volume for MongoDB data
+
+volumes:
+  mongodb-data: # Define a named volume for MongoDB data

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-service
+spec:
+  selector:
+    app: mongodb
+  ports:
+    - protocol: TCP
+      port: 27017  # The port you want to expose your MongoDB on
+      targetPort: 27017  # The default port for MongoDB
+  type: ClusterIP
