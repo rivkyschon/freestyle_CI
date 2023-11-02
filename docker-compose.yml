@@ -2,9 +2,10 @@ version: '3'
 
 services:
   nodejs-app:
-    build:
-      context: . # Replace with the path to your Node.js app
-      dockerfile: Dockerfile
+    # build:
+    #   context: . # Replace with the path to your Node.js app
+    #   dockerfile: Dockerfile
+    image: rivkyschon/nodejs-app:v0.0.1
     ports:
       - "4000:4000" # Expose the Node.js app port
 
