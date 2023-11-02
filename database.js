@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGODB_URI = 'mongodb-service:27017/pucsd';
+const MONGODB_URI = 'mongodb://localhost:27017/pucsd';
 
 mongoose
   .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
