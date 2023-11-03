@@ -1,4 +1,6 @@
 #!/bin/bash
+# ----------------- I used this script to run my containers from jenkins ------------------------------
+
 
 # Define your custom network name
 NETWORK_NAME="my-network"
