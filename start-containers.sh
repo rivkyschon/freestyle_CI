@@ -1,6 +1,5 @@
 #!/bin/bash
-# ----------------- I used this script to run my containers from jenkins ------------------------------
-
+# I used this script to run my containers from jenkins without using docker-compose
 
 # Define your custom network name
 NETWORK_NAME="my-network"
